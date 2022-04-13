@@ -10,11 +10,10 @@ def findMaxMeet(times):
 
 
 if __name__ == '__main__':
-
     tc = int(input())
     times = []
-    while(tc):
-        timeInp = input()
+    for _ in range(tc):
+        timeInp = str(input())
         timeSplt = timeInp.split(" ")
         temps = []
         for x in timeSplt:
@@ -22,5 +21,4 @@ if __name__ == '__main__':
             timeInt = int(temp[0])*60 + int(temp[1])
             temps.append(timeInt)
         times.append(temps)
-        tc -= 1
     findMaxMeet(times)
