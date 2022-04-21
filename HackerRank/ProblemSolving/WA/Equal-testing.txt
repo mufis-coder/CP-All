@@ -1,0 +1,14 @@
+1
+6
+2 5 5 5 5 5 -> ora dikurang mini
+==6
+
+1
+4
+2 2 3 7 -> dikurang mini kabeh
+==2
+
+1
+5
+1 5 5 10 10 -> ora dikurangi mini 1, 2, 5
+==7

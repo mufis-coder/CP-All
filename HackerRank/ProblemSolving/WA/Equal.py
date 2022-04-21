@@ -16,18 +16,30 @@ import sys
 def equal(arr):
     # Write your code here
     mini = min(arr)
-    arr = [x-mini for x in arr]
+    arr = [x-mini if x not in [1, 2, 5] or x == mini else x for x in arr]
+    print(arr)
     
     count=0
     while(1):
-        print(arr)
+        # print(arr)
         if(max(arr)>=5):
-            arr = [x-5 if x >= 5 else x for x in arr]
+            for x in range(len(arr)):
+                if arr[x] >= 5:
+                    arr[x] -= 5
+                    break
         elif(max(arr)>=2):
-            arr = [x-2 if x >= 2 else x for x in arr]
+            for x in range(len(arr)):
+                if arr[x] >= 2:
+                    arr[x] -= 2
+                    break
         elif(max(arr)>=1):
-            arr = [x-1 if x >= 1 else x for x in arr]
+            for x in range(len(arr)):
+                if arr[x] >= 1:
+                    arr[x] -= 1
+                    break
         count += 1
+        # if(count>5):
+        #     break
         if(len(set(arr))==1):
             break
     print(count)
