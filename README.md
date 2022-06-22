@@ -1,2 +1,2 @@
-# CP-SPOJ-Problem-CPP
-Repositori untuk menyimpan code (dalam bahasa C atau CPP) Problem SPOJ
+# CP ALL
+Repositori untuk menyimpan code competitive programming
