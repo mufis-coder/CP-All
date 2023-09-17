@@ -1,3 +1,8 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
 class Solution {
 public:
     void permuteRecursive(vector<int>& nums, int i, int j, vector<vector<int>>& result){
